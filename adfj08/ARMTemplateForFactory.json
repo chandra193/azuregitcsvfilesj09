@@ -13,13 +13,13 @@
 	},
 	"resources": [
 		{
-			"name": "[concat(parameters('factoryName'), '/gitaz')]",
+			"name": "[concat(parameters('factoryName'), '/azuregitpipeline')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"activities": [
 					{
-						"name": "Aztogit",
+						"name": "Wait1",
 						"type": "Wait",
 						"dependsOn": [],
 						"userProperties": [],
